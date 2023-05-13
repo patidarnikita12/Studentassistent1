@@ -238,4 +238,5 @@ def test():
     except:
         return 'My db is not Connected'
 
-app.run(debug=True)    
+if __name__ == "__main__":
+    app.run(debug=False)
