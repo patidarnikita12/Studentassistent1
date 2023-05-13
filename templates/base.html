@@ -47,8 +47,6 @@
  <li><a href="/search">Search</a></li>
 <!--            <li><a href="/about">About</a></li>-->
           
-   
-
     {% if current_user.is_authenticated  %}
           <li class="buy-tickets"><a href="">Welcome {{current_user.username}}</a></li>
             <li class="buy-tickets"><a href="/logout">Logout</a></li>
@@ -65,13 +63,12 @@
  <section id="intro">
     <div class="intro-container" data-aos="zoom-in" data-aos-delay="100">
       <h1 class="mb-4 pb-0">STUDENT MANAGEMENT SYSTEM </span> </h1>
-      <p class="mb-4 pb-0">DBMS Mini Project Using Flask & MYSQL</p>
+      <p class="mb-4 pb-0">WELCOME ON THE STUDENT PORTAL</p>
     
       <a href="" class="about-btn scrollto">View More</a>
     </div>
   </section><!-- End Intro Section -->
   <main id="main">
-
 
   {% block body %}
   
@@ -82,16 +79,11 @@
 <div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
     {{message}}
 
-
 </div>
-
-
   {% endfor %}
   {% endif %}
   {% endwith %}
   {% endblock body %}
-
-
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <!-- Vendor JS Files -->
